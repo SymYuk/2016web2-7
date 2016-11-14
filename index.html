@@ -23,8 +23,9 @@
 		scene.add(light);
 		scene.add(new THREE.AmbientLight(0xffffff));
 		
+		var loader=new THREE.TextureLoader();
 		var geometry=new THREE.BoxGeometry(2,2,0.1);
-		var material=new THREE.MeshBasicMaterial({color:0xaaff88});
+		var material=new THREE.MeshBasicMaterial({color:0xaaff88, map:loader.load('spy.png')});
 		var cube=new THREE.Mesh(geometry,material);
 		scene.add(cube);
 		
