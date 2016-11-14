@@ -9,7 +9,7 @@
 	</style>
 </head>
 <body>
-	<h1>>こんにちは</h1>
+	<h1>こんにちは</h1>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r81/three.min.js"></script>
 	<script type="text/javascript">
 		var scene=new THREE.Scene();
@@ -19,10 +19,10 @@
 		renderer.setSize(window.innerWidth,window.innerHeight);
 		document.body.appendChild(renderer.domElement);
 		
-		var light=new THREE.DirectionalLight(0xffffff);
+		var light=new THREE.DirectionalLight(0xdddddd);
 		light.position.set(0,100,50);
 		scene.add(light);
-		scene.add(new THREE.AmbientLight(0xffffff));
+		scene.add(new THREE.AmbientLight(0xffdd99));
 		
 		var loader=new THREE.TextureLoader();
 		var geometry=new THREE.BoxGeometry(2,2,0.1);
